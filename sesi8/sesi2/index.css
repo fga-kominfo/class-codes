@@ -1,0 +1,31 @@
+body {
+    background-image: url(https://www.krugerpark.co.za/images/leopard-kruger-rh-786x500.jpg);
+}
+
+h1 {
+    color: purple;
+    text-decoration: underline;
+}
+
+#title  {
+    color: red;
+    font-size: 50px;
+}
+
+.blue {
+    color: blue;
+}
+
+.content {
+    background-color: rgba(52, 172, 224,0.3);
+}
+
+.red {
+    color: red;
+}
+
+/* memberikan styling ke elemen span yang memiliki class "content" */
+span.content {
+    font-weight: 600;
+    font-size: large;
+}

@@ -1,0 +1,42 @@
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    gap: 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.id-container {
+    display: flex;
+    gap: 15px;
+}
+
+.id-container p {
+    vertical-align: top;
+}
+
+.image-container {
+    background-color: green;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: purple;
+
+}
+
+.label {
+    display: flex;
+    flex: 3;
+    background-color: orange;
+}
+
+.value {
+    display: flex;
+    flex: 7;
+    background-color: red;
+}

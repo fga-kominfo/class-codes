@@ -1,0 +1,11 @@
+.red-text {
+    color: red !important;
+}
+
+#shadow {
+    box-shadow: 10px 10px rgba(15, 13, 13, 0.2) !important;
+}
+
+/* .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: red;
+  } */
