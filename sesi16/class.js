@@ -1,6 +1,6 @@
 class Employee {
   #ktp;
-  constructor(name, position, salary, department, ktp) {
+  constructor(name, position, salary, department) {
     this.name = name;
     this.race = 'human';
     this.nationality = 'Indonesia';
@@ -30,6 +30,10 @@ class Employee {
       }
     }
     return maskedKtp;
+  }
+
+  setIdentityNumber(payload) {
+    this.$ktp = payload;
   }
 
   getEmployeeNumber() {
