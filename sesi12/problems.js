@@ -158,19 +158,49 @@ function secondLargest(arr) {
   return secondMax;
 }
 
-console.log(secondLargest([10, 5, 8, 12, 3])); // 10
-console.log(secondLargest([4, 7, 7, 8, 8])); // 7
+// console.log(secondLargest([10, 5, 8, 12, 3])); // 10
+// console.log(secondLargest([4, 7, 7, 8, 8])); // 7
 
 // 10. Find the Sum of Digits in a Number
-function sumOfDigits(num) {}
+function sumOfDigits(num) {
+  let result = 0; // 4 + 3 + 2 + 1
+
+  while (num > 0) {
+    result += num % 10; // remaining 4
+    num = Math.floor(num / 10); // 12
+  }
+
+  // const digitNum = num.toString();
+
+  // for (let i = 0; i < digitNum.length; i++) {
+  //   result += Number(digitNum[i]);
+  // }
+
+  return result;
+}
 
 // console.log(sumOfDigits(1234)); // 10
 // console.log(sumOfDigits(567)); // 18
+// console.log(sumOfDigits(54321)); // 15
 
 // 11. asterisk
-function asterisk(n) {}
+function asterisk(n) {
+  // for (let i = 1; i <= n; i++) {
+  //   let row = '*';
+  //   for (let j = 1; j < i; j++) {
+  //     row += '*';
+  //   }
+  //   console.log(row);
+  // }
 
-asterisk(5);
+  let str = '';
+  for (let i = 0; i < n; i++) {
+    str += '*';
+    console.log(str);
+  }
+}
+
+// asterisk(5);
 /*
  *
  **
@@ -180,9 +210,18 @@ asterisk(5);
  */
 
 // 12. reverseASterisk
-function reverseAsterisk(n) {}
+function reverseAsterisk(n) {
+  for (let i = n; i >= 1; i--) {
+    // console.log('*'.repeat(i))
+    let stars = '';
+    for (let j = 1; j <= i; j++) {
+      stars += '*';
+    }
+    console.log(stars);
+  }
+}
 
-reverseAsterisk(5);
+// reverseAsterisk(5);
 /*
  *****
  ****
@@ -192,7 +231,21 @@ reverseAsterisk(5);
  */
 
 // 13. returningAsterisk
-function returningAsterisk(n) {}
+function returningAsterisk(n) {
+  let str = '';
+  for (let i = 1; i <= n; i++) {
+    str += '*';
+    console.log(str);
+  }
+  str = '';
+  for (let i = n - 1; i >= 1; i--) {
+    str = '';
+    for (let j = 0; j < i; j++) {
+      str += '*';
+    }
+    console.log(str);
+  }
+}
 
 returningAsterisk(5);
 /*
