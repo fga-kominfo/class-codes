@@ -1,0 +1,30 @@
+{
+    "spouses": [
+      {
+        "id": 1,
+        "employee_id": 1,
+        "name": "Jane Doe"
+      },
+      {
+        "id": 2,
+        "employee_id": 2,
+        "name": "Michael Johnson"
+      },
+      {
+        "id": 3,
+        "employee_id": 4,
+        "name": "James Williams"
+      },
+      {
+        "id": 4,
+        "employee_id": 7,
+        "name": "Laura White"
+      },
+      {
+        "id": 5,
+        "employee_id": 10,
+        "name": "George Brown"
+      }
+    ]
+  }
+  

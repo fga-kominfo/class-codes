@@ -1,0 +1,55 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "role": "Manager"
+      },
+      {
+        "id": 2,
+        "name": "Alice Johnson",
+        "role": "Engineer"
+      },
+      {
+        "id": 3,
+        "name": "Mark Smith",
+        "role": "Technician"
+      },
+      {
+        "id": 4,
+        "name": "Sarah Williams",
+        "role": "Designer"
+      },
+      {
+        "id": 5,
+        "name": "David Brown",
+        "role": "HR Specialist"
+      },
+      {
+        "id": 6,
+        "name": "Nancy Lee",
+        "role": "Marketing Specialist"
+      },
+      {
+        "id": 7,
+        "name": "Peter White",
+        "role": "Sales Executive"
+      },
+      {
+        "id": 8,
+        "name": "Jessica Green",
+        "role": "Product Manager"
+      },
+      {
+        "id": 9,
+        "name": "Robert Black",
+        "role": "Developer"
+      },
+      {
+        "id": 10,
+        "name": "Emily Brown",
+        "role": "Data Analyst"
+      }
+    ]
+  }
+  
