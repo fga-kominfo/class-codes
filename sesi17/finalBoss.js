@@ -143,5 +143,5 @@ function checkUsersCovered(channels, selectedChannels) {
   };
 }
 
-console.log(checkUsersCovered(channels2, minimumChannels));
+// console.log(checkUsersCovered(channels2, minimumChannels));
 // ["general", "random", "music", "coding", "food"]
