@@ -2,7 +2,7 @@ const api = 'https://pokeapi.co/api/v2/pokemon/';
 
 function getPokemons() {}
 
-// hasilnya =>
+// hasilnya => ditulis ke dalam pokemons.json
 /*
     [
         {
