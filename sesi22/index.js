@@ -23,42 +23,48 @@
 //   console.log(num);
 // });
 
-function chopper(fruits, cb) {
-  console.log(fruits, 'chopping fruits...');
+// function chopper(fruits, cb) {
+//   console.log(fruits, 'chopping fruits...');
 
-  setTimeout(() => {
-    //logic mengubah fruits menjadi => 'chopped-{fruitName}'
-    const choppedFruits = fruits.map(
-      fruit => 'chopped-' + fruit,
-    );
-    cb(choppedFruits);
-  }, 1000);
-}
+//   setTimeout(() => {
+//     //logic mengubah fruits menjadi => 'chopped-{fruitName}'
+//     const choppedFruits = fruits.map(
+//       fruit => 'chopped-' + fruit,
+//     );
+//     cb(choppedFruits);
+//   }, 1000);
+// }
 
-function juicer(choppedFruits, cb) {
-  console.log(choppedFruits, 'juicing chopped fruits...');
+// function juicer(choppedFruits, cb) {
+//   console.log(choppedFruits, 'juicing chopped fruits...');
 
-  setTimeout(() => {
-    //logic mengubah 'chopped-{fruitName}' menjadi => '{fruitName}-juice'
-    const juices = choppedFruits.map(
-      fruit => fruit.split('-')[1] + '-juice',
-    );
-    cb(juices);
-  }, 1000);
-}
+//   setTimeout(() => {
+//     //logic mengubah 'chopped-{fruitName}' menjadi => '{fruitName}-juice'
+//     const juices = choppedFruits.map(
+//       fruit => fruit.split('-')[1] + '-juice',
+//     );
+//     cb(juices);
+//   }, 1000);
+// }
 
-function startJuicing(fruits) {
-  //your code here
-  chopper(fruits, choppedFruits => {
-    juicer(choppedFruits, juices => {
-      console.log(
-        juices.join(', '),
-        'is ready to be served',
-      );
-    });
-  });
-}
+// function startJuicing(fruits) {
+//   //your code here
+//   chopper(fruits, choppedFruits => {
+//     juicer(choppedFruits, juices => {
+//       console.log(
+//         juices.join(', '),
+//         'is ready to be served',
+//       );
+//     });
+//   });
+// }
 
-const fruits = ['apple', 'mango', 'papaya', 'watermelon'];
+// const fruits = ['apple', 'mango', 'papaya', 'watermelon'];
 
-startJuicing(fruits);
+// startJuicing(fruits);
+
+const getEmployees = require('./merge-promise');
+
+getEmployees(employees => {
+  console.log(employees, '<<employees di index.js');
+});
