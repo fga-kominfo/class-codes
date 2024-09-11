@@ -29,13 +29,14 @@
             </div>
             <div class="d-flex flex-row gap-2 align-items-center mb-3">
                 <p class="m-0">Filters:</p>
-                <button type="button" class="btn btn-primary" onclick="sort()">Done</button>
-                <button type="button" class="btn btn-primary" onclick="sort('ascending')">Not Done</button>
+                <button type="button" class="btn btn-primary" onclick="filterTodo()">Default</button>
+                <button type="button" class="btn btn-primary" onclick="filterTodo('done')">Done</button>
+                <button type="button" class="btn btn-primary" onclick="filterTodo('undone')">Not Done</button>
             </div>
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Search Todo" aria-label="Search Todo"
-                    aria-describedby="button-addon2" id="input-todo">
-                <button class="btn btn-primary" type="button" id="submit-todo" onclick="addTodo()">Search</button>
+                    aria-describedby="button-addon2" id="input-search">
+                <button class="btn btn-primary" type="button" id="submit-search" onclick="searchTodo()">Search</button>
             </div>
             <div>
                 <ul class="list-group" id="content">

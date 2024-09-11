@@ -89,9 +89,47 @@ function sort(type) {
   displayTodo();
 }
 
-function displayTodo() {
-  content.innerHTML = '';
+function searchTodo() {
+  const keyword = document
+    .getElementById('input-search')
+    .value.toLowerCase();
   const todos = getTodos();
+
+  if (!todos) return;
+  const filterTodos = todos.filter(todo =>
+    todo.todo.toLowerCase().includes(keyword),
+  );
+  displayTodo(filterTodos);
+}
+
+function filterTodo(type) {
+  let todos = getTodos();
+
+  // const filteredTodos = todos.filter(e => {
+  //   if (type === 'done') {
+  //     return e.isDone;
+  //   } else if (type === 'undone') {
+  //     return !e.isDone;
+  //   }
+  //   return true;
+  // });
+
+  switch (type) {
+    case 'done':
+      todos = todos.filter(e => e.isDone === true);
+      break;
+    case 'undone':
+      todos = todos.filter(e => e.isDone === false);
+      break;
+    default:
+      break;
+  }
+
+  displayTodo(todos);
+}
+
+function displayTodo(todos = getTodos()) {
+  content.innerHTML = '';
 
   let listHtml = '';
 
