@@ -1,8 +1,8 @@
 function compareNumber(firstNumber, secondNumber) {
   if (firstNumber === secondNumber) return -1; // edge case
-  return secondNumber > firstNumber
-    ? 'lebih besar secondNumber'
-    : 'lebih besar firstNumber';
+  return secondNumber > firstNumber;
+  //   ? 'lebih besar secondNumber'
+  //   : 'lebih besar firstNumber';
   //   if (secondNumber > firstNumber) {
   //     return 'lebih besar secondNumber';
   //   } else if (firstNumber > secondNumber) {
@@ -128,3 +128,11 @@ function primeSequence(array) {
 // console.log(primeSequence([1, 10])); // [2, 3, 5, 7]
 // console.log(primeSequence([1, 20])); // [2, 3, 5, 7, 11, 13, 17, 19]
 // console.log(primeSequence([1, 30])); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+module.exports = {
+  primeSequence,
+  isPrime,
+  isArithmeticSequence,
+  sortCharacter,
+  reverseString,
+  compareNumber,
+};
